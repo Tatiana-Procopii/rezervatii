@@ -83,7 +83,7 @@ main {
     height: 100%; /* Asigură că main acoperă întregul ecran */
     overflow: hidden;
     padding-top: 50px; 
-    z-index: -1 ;
+
    
 }
 
