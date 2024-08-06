@@ -1,0 +1,336 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%;
+   
+    z-index: 1000;
+    background-color: rgb(4, 80, 3); /* Asigură vizibilitatea peste conținut */
+}
+   
+   
+html, body {
+    overflow-x: hidden; /* Previne scroll-ul orizontal */
+    overflow-y: auto; /* Asigură scroll-ul vertical */
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content:start;
+    flex-wrap: wrap; 
+  
+}
+    
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+   
+}
+ a nav{
+    padding-right: 50px;
+ }
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+}
+
+.meniu-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.meniu-link:hover {
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    height: 100%; /* Asigură că main acoperă întregul ecran */
+    overflow: hidden;
+    padding-top: 50px; 
+    z-index: -1 ;
+   
+}
+
+
+#sectiune-despre {
+    padding: 3px;
+    overflow: visible; /* Asigură-te că overflow nu ascunde conținutul */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  
+}
+#sectiune-acasa {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Înălțimea secțiunii poate fi ajustată */
+    overflow: hidden;
+}
+
+.container-imagine {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imagine-natura {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Efect de întunecare */
+    text-align: center; /* Centrare text */
+}
+
+.text-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.text-overlay h1 {
+    margin: 0 0 7rem 0; /* Margine sub titlu */
+    font-size: 2rem; /* Ajustează dimensiunea titlului */
+}
+
+.buton-exploreaza {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buton-exploreaza:hover {
+    background-color: #45a049;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    
+}
+p {
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex-direction: row; /* Asigură alinierea pe orizontală */
+    overflow: auto;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #4CAF50;
+}
+
+
+.text h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.rezervatie {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.media-container {
+    flex: 1;
+    max-width: 40%;
+    min-width: 300px;
+    margin-right: 1rem;
+}
+
+.media-container img, .media-container iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.text-container {
+    margin-top: 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container h3 {
+    margin-top: 0;
+}
+
+.text-container p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #062a07;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #4CAF50;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .meniu-link {
+        display: block;
+        margin: 1rem 0;
+
+    }
+    h2 {
+        margin-top: 25px;
+    }
+    
+    #sectiune-acasa {
+        min-height: 80dvh;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.5rem; /* Ajustează dimensiunea titlului pe ecrane mici */
+    }
+
+    .buton-exploreaza {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+   
+    .container {
+        flex-direction: row; /* Asigură alinierea pe orizontală pe ecrane mici */
+        justify-content: left; /* Aliniere la începutul rândului */
+    text-align: left;
+    }
+
+    .icon {
+        margin-right: 0.5rem; /* Reduce spațiul între icon și text */
+    }
+
+  
+
+    .text h3 {
+        font-size: 1.2rem; /* Diminuează dimensiunea fontului pentru titlu */
+    }
+
+
+    .header-content {
+        flex-direction:row;
+        align-items: center;
+       
+            justify-content:space-around;
+             }
+            
+    
+    .logo {
+        max-width: 40px;
+    }
+    .rezervatie {
+        flex-direction: column;
+    }
+
+    .media-container {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+}
+
