@@ -86,6 +86,9 @@ main {
 
    
 }
+section{
+    min-height: 100vh;
+}
 
 
 #sectiune-despre {
@@ -104,6 +107,13 @@ main {
     overflow: hidden;
 }
 
+h2 {
+    margin-top: 3rem; /* Adaugă spațiu deasupra titlului */
+    margin-bottom: 1.5rem; /* Spațiu sub titlu */
+    text-align: center; /* Aliniază titlul pe centru */
+    font-size: 2rem; /* Ajustează dimensiunea fontului dacă este necesar */
+    color: #333; /* Culoare pentru titlu */
+}
 .container-imagine {
     position: relative;
     width: 100%;
@@ -188,7 +198,8 @@ p {
 
 .icon {
     font-size: 2rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 2rem;
     color: #4CAF50;
 }
 
@@ -256,6 +267,63 @@ footer {
     width: 100%;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: center; /* Centrarea pe orizontală */
+    align-items: flex-start; /* Alinierea la începutul containerului */
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 900px; /* Dimensiune maximă pentru întregul container */
+    margin: 0 auto; /* Centrarea pe pagină */
+}
+
+.left-side,
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px; /* Dimensiune maximă pentru fiecare div */
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-group input, textarea {
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 3px;
+}
+textarea {
+    size: none;
+}
+.map-container {
+    height: 350px;
+}
+
+.map-container iframe {
+    width:500px; 
+    height:430px; 
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+button {
+    color: #45a049;
+    font:bold;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 2px;
+}
+
+button:hover {
+    background-color: #034807;
+    color:azure
+}
+
 @media (max-width: 600px) {
     header {
         height: 8%;
@@ -309,6 +377,7 @@ footer {
 
     .icon {
         margin-right: 0.5rem; /* Reduce spațiul între icon și text */
+        margin-left: 0.5rem;
     }
 
   
@@ -341,5 +410,27 @@ footer {
     .text-container {
         max-width: 100%;
     }
+    .contact-container {
+        flex-direction: column;
+        max-width: 100%; /* Asigură că se ajustează complet la ecrane mici */
+        padding: 0 1rem; /* Adaugă un mic padding lateral */
+    }
+
+    .map-container iframe {
+        height: 296px;
+        width: 355px;
+    }
+  
+
+/* Footer fix */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    margin-top: 2rem;
+
 }
 
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="../js/main.js"></script>
+
 </head>
+
 <body>
     <header>
         <div class="header-content">
@@ -27,8 +32,43 @@
     </header>
     <main>
         <section id="sectiune-contacte">
-            <h2>Contactați-ne</h2>
-            <p>Pentru mai multe informații, nu ezitați să ne contactați.</p>
+            <h2>Contactează-ne</h2>
+
+            <div class="contact-container">
+                <div class="left-side">
+                    <div class="contact-info">
+                        <p><strong>Data:</strong> 12 August 2024</p>
+                        <p><strong>Adresă:</strong> Str. Principală, Nr. 10, Chișinău, Republica Moldova</p>
+                        <p><strong>Telefon:</strong> <a href="tel:+373123456789">+373 123 456 789</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:contact@rezervatii.md">contact@rezervatii.md</a></p>
+                    </div>
+
+                    <div class="contact-form">
+                        <form  id="formular" >
+                            <div class="form-group">
+                                <input type="text" id="nume" name="nume" placeholder="Nume" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subiect" name="subiect" placeholder="Subiect" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesaj" required></textarea>
+                            </div>
+                            <button onclick="send()" type="submit">Trimite</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <h3>Locația noastră</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.4995828972164!2d28.86381031589246!3d47.01045297915133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbd58d292e2d3b%3A0x94a8b133e04e64b8!2sStr.%20Principal%C4%83%2C%20Chi%C8%99in%C4%83u!5e0!3m2!1sro!2smd!4v1595923764531!5m2!1sro!2smd"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -37,13 +77,14 @@
 
     <script>
         function toggleMenu() {
-           var menu = document.getElementById('menu-links');
-           if (menu.style.display === 'block') {
-               menu.style.display = 'none';
-           } else {
-               menu.style.display = 'block';
-           }
-       }
-   </script>
+            var menu = document.getElementById('menu-links');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
 </body>
+
 </html>
