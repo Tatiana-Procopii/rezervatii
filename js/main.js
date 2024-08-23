@@ -7,6 +7,25 @@ function toggleMenu() {
     }
 }
 
+// Funcție pentru actualizarea datei
+function actualizeazaData() {
+    const dataElement = document.getElementById('data-curenta');
+    const dataCurenta = new Date();
+
+    const optiuni = { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+    };
+
+    const dataFormata = dataCurenta.toLocaleDateString('ro-RO', optiuni);
+    dataElement.textContent = dataFormata;
+}
+
+// Apelăm funcția la încărcarea paginii
+document.addEventListener('DOMContentLoaded', actualizeazaData);
+
+
 emailjs.init("c1pdO4HeYDPxv-pzT");
 function send() {
 

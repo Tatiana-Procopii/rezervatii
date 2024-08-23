@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
+
 }
 
 header {
@@ -11,28 +11,34 @@ header {
     top: 0;
     width: 100%;
     height: 9%;
-   
+
     z-index: 1000;
-    background-color: rgb(4, 80, 3); /* Asigură vizibilitatea peste conținut */
+    background-color: rgb(4, 80, 3);
+    /* Asigură vizibilitatea peste conținut */
 }
-   
-   
-html, body {
-    overflow-x: hidden; /* Previne scroll-ul orizontal */
-    overflow-y: auto; /* Asigură scroll-ul vertical */
+
+
+html,
+body {
+    overflow-x: hidden;
+    /* Previne scroll-ul orizontal */
+    overflow-y: auto;
+    /* Asigură scroll-ul vertical */
     margin: 0;
     padding: 0;
 }
 
 .header-content {
     display: flex;
-    padding: 10px;
+    padding-top: 14px;
+    padding-bottom: 24px;
+    padding-left: 50px;
     align-items: center;
-    justify-content:start;
-    flex-wrap: wrap; 
-  
+    justify-content: start;
+    flex-wrap: wrap;
+
 }
-    
+
 
 .logo {
     width: 40px;
@@ -48,11 +54,12 @@ h1 {
 nav {
     display: flex;
     align-items: center;
-   
+
 }
- a nav{
+
+a nav {
     padding-right: 50px;
- }
+}
 
 .menu-icon {
     display: none;
@@ -80,40 +87,51 @@ nav {
 
 main {
     position: relative;
-    height: 100%; /* Asigură că main acoperă întregul ecran */
+    height: 100%;
+    /* Asigură că main acoperă întregul ecran */
     overflow: hidden;
-    padding-top: 50px; 
+    padding-top: 50px;
 
-   
+
 }
-section{
+
+section {
     min-height: 100vh;
 }
 
 
 #sectiune-despre {
     padding: 3px;
-    overflow: visible; /* Asigură-te că overflow nu ascunde conținutul */
+    overflow: visible;
+    /* Asigură-te că overflow nu ascunde conținutul */
     font-family: 'Roboto', sans-serif;
     text-align: center;
-  
+
 }
+
 #sectiune-acasa {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Înălțimea secțiunii poate fi ajustată */
+    height: 100vh;
+    /* Înălțimea secțiunii poate fi ajustată */
     overflow: hidden;
 }
 
 h2 {
-    margin-top: 3rem; /* Adaugă spațiu deasupra titlului */
-    margin-bottom: 1.5rem; /* Spațiu sub titlu */
-    text-align: center; /* Aliniază titlul pe centru */
-    font-size: 2rem; /* Ajustează dimensiunea fontului dacă este necesar */
-    color: #333; /* Culoare pentru titlu */
+    margin-top: 3rem;
+    /* Adaugă spațiu deasupra titlului */
+    margin-bottom: 1.5rem;
+    /* Spațiu sub titlu */
+    text-align: center;
+    /* Aliniază titlul pe centru */
+    font-size: 2rem;
+    /* Ajustează dimensiunea fontului dacă este necesar */
+    color: #333;
+    /* Culoare pentru titlu */
 }
+
 .container-imagine {
     position: relative;
     width: 100%;
@@ -121,7 +139,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .imagine-natura {
@@ -129,6 +147,7 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -138,8 +157,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Efect de întunecare */
-    text-align: center; /* Centrare text */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Efect de întunecare */
+    text-align: center;
+    /* Centrare text */
 }
 
 .text-overlay {
@@ -153,8 +174,10 @@ h2 {
 }
 
 .text-overlay h1 {
-    margin: 0 0 7rem 0; /* Margine sub titlu */
-    font-size: 2rem; /* Ajustează dimensiunea titlului */
+    margin: 0 0 7rem 0;
+    /* Margine sub titlu */
+    font-size: 2rem;
+    /* Ajustează dimensiunea titlului */
 }
 
 .buton-exploreaza {
@@ -173,18 +196,21 @@ h2 {
 }
 
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
-    
+
 }
+
 p {
     margin: 20px;
 }
 
 .container {
     max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     margin-bottom: 4px;
@@ -192,7 +218,8 @@ p {
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    flex-direction: row; /* Asigură alinierea pe orizontală */
+    flex-direction: row;
+    /* Asigură alinierea pe orizontală */
     overflow: auto;
 }
 
@@ -235,7 +262,8 @@ ul {
     margin-right: 1rem;
 }
 
-.media-container img, .media-container iframe {
+.media-container img,
+.media-container iframe {
     width: 100%;
     border-radius: 8px;
 }
@@ -262,26 +290,31 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position:static;
+    position: static;
     bottom: 0;
     width: 100%;
 }
 
 .contact-container {
     display: flex;
-    justify-content: center; /* Centrarea pe orizontală */
-    align-items: flex-start; /* Alinierea la începutul containerului */
+    justify-content: center;
+    /* Centrarea pe orizontală */
+    align-items: flex-start;
+    /* Alinierea la începutul containerului */
     gap: 2rem;
     flex-wrap: wrap;
-    max-width: 900px; /* Dimensiune maximă pentru întregul container */
-    margin: 0 auto; /* Centrarea pe pagină */
+    max-width: 900px;
+    /* Dimensiune maximă pentru întregul container */
+    margin: 0 auto;
+    /* Centrarea pe pagină */
 }
 
 .left-side,
 .map-container {
     flex: 1;
     min-width: 300px;
-    max-width: 450px; /* Dimensiune maximă pentru fiecare div */
+    max-width: 450px;
+    /* Dimensiune maximă pentru fiecare div */
 }
 
 .contact-form {
@@ -291,29 +324,34 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.form-group input, textarea {
+
+.form-group input,
+textarea {
     margin-top: 12px;
     width: 100%;
     border-radius: 5px;
     padding: 3px;
 }
+
 textarea {
     size: none;
 }
+
 .map-container {
     height: 350px;
 }
 
 .map-container iframe {
-    width:500px; 
-    height:430px; 
+    width: 500px;
+    height: 430px;
     border-radius: 8px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 button {
     color: #45a049;
-    font:bold;
+    font: bold;
     border-radius: 5px;
     padding: 7px;
     margin-top: 2px;
@@ -321,13 +359,14 @@ button {
 
 button:hover {
     background-color: #034807;
-    color:azure
+    color: azure
 }
 
 @media (max-width: 600px) {
     header {
         height: 8%;
     }
+
     .menu-icon {
         display: block;
     }
@@ -351,16 +390,18 @@ button:hover {
         margin: 1rem 0;
 
     }
+
     h2 {
         margin-top: 25px;
     }
-    
+
     #sectiune-acasa {
         min-height: 80dvh;
     }
 
     .text-overlay h1 {
-        font-size: 1.5rem; /* Ajustează dimensiunea titlului pe ecrane mici */
+        font-size: 1.5rem;
+        /* Ajustează dimensiunea titlului pe ecrane mici */
     }
 
     .buton-exploreaza {
@@ -368,36 +409,43 @@ button:hover {
         padding: 0.8rem 1.5rem;
     }
 
-   
+
     .container {
-        flex-direction: row; /* Asigură alinierea pe orizontală pe ecrane mici */
-        justify-content: left; /* Aliniere la începutul rândului */
-    text-align: left;
+        flex-direction: row;
+        /* Asigură alinierea pe orizontală pe ecrane mici */
+        justify-content: left;
+        /* Aliniere la începutul rândului */
+        text-align: left;
     }
 
     .icon {
-        margin-right: 0.5rem; /* Reduce spațiul între icon și text */
+        margin-right: 0.5rem;
+        /* Reduce spațiul între icon și text */
         margin-left: 0.5rem;
     }
 
-  
+
 
     .text h3 {
-        font-size: 1.2rem; /* Diminuează dimensiunea fontului pentru titlu */
+        font-size: 1.2rem;
+        /* Diminuează dimensiunea fontului pentru titlu */
     }
 
 
     .header-content {
-        flex-direction:row;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+        padding-top: 5px;
+        padding-left: 0;
        
-            justify-content:space-around;
-             }
-            
-    
-    .logo {
-        max-width: 40px;
     }
+
+
+    .logo {
+        max-width: 30px;
+    }
+
     .rezervatie {
         flex-direction: column;
     }
@@ -410,27 +458,30 @@ button:hover {
     .text-container {
         max-width: 100%;
     }
+
     .contact-container {
         flex-direction: column;
-        max-width: 100%; /* Asigură că se ajustează complet la ecrane mici */
-        padding: 0 1rem; /* Adaugă un mic padding lateral */
+        max-width: 100%;
+        /* Asigură că se ajustează complet la ecrane mici */
+        padding: 0 1rem;
+        /* Adaugă un mic padding lateral */
     }
 
     .map-container iframe {
         height: 296px;
         width: 355px;
     }
-  
 
-/* Footer fix */
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    margin-top: 2rem;
 
-}
+    /* Footer fix */
+    footer {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        margin-top: 2rem;
+
+    }
 
 }
